@@ -1,0 +1,21 @@
+API
+
+	Application
+programming
+Interface is used to
+share data
+between two
+unrelated systems
+
+REST:
+Means that all
+information is
+contained within
+the request itself
+	
+	Common HTTP Verbs Used:
+GET → Request record
+PUT → Update record
+POST → Create record
+DELETE → Delete record
+
