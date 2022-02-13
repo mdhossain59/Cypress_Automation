@@ -22,7 +22,7 @@ cy.get('.ui-menu-item div').each(($e1, index, $list) => {
  
     if($e1.text()=="India")
     {
-        cy.wrap($el).click()
+        cy.wrap($e1).click()
     }
  
  
@@ -39,6 +39,15 @@ cy.get('#displayed-text').should('be.visible')
 //radio buttons
  
 cy.get('[value="radio2"]').check().should('be.checked')
+
+// to handle child window we need to use following command
+cy.get('#opentab').invoke('removeAttr','target').click()
+
+//in order to validate current url we can use this command
+cy.url().should('include','index')
+
+ //In order to navigate back page we need to use this command
+cy.go('back')
 
 })
 })
